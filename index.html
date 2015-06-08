@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>A Pen by  Stephen Mettler</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>Steve's Notes</title>
+    <link rel="stylesheet" href="steve-style.css">
+  </head>
+<body>
+  <div class="heading">
+    <div class="block">
+      <h1>Steve's Intro to Programming Microdegree Notes</h1>
+    </div>
+  </div>
+  <div class="table">
+    <div class="block">
+      <h2>Table of contents</h2>
+        <ul>
+          <li><a href="#lesson1_1">Lesson 1.1</a></li>
+          <li><a href="#lesson1_2">Lesson 1.2</a></li>
+          <li><a href="#lesson1_3">Lesson 1.3</a></li>
+          <li><a href="#additional_notes">Other important notes</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="notes">
+    <h2 id="lesson1_1">Lesson 1.1 - Web basics</h2>
+    <div class="block">
+      <p>
+        <b>General notes</b>
+      </p>
+      <p>You (and your browser) request to the Internet, which requests to servers (closet computers hosting files). HTML stands for “HyperText Markup Language” – base for all web pages. Web pages are made up of text content (what you see) and markup (what it looks like). Web pages can contain references to other documents (images/videos/etc), links to other pages.</p>
+    </div>
+    <div class="block">
+      <p>
+        <b>HTML tags (in all cases below: greater/less than signs replaced with parentheses)</b>
+      </p>
+      <p>
+        Bold: (b)bold(/b)<br>
+        Emphasis: (em)italicize(/em)<br>
+        Image tag: (img src=”url” alt=”text”) [nice to include alt just in case url doesn’t work][“void” tag doesn’t need a closing tag]<br>
+        Break tag: (br) makes a line break [another void tag], stack if you want multiple breaks <br>
+        Paragraph tag: (p) content (/p) will render as a paragraph<br>
+        Difference between break and paragraph tags: former is <b>inline</b> (just text), whereas paragraph makes a block (with height and width)<br>
+        Span and div both contain content (inline and block, respectively): (span) text (/span), (div) text (/div)<br>
+        Attributes: (tag ATTR=“value”)contents(/tag)<br>
+        Anchors make links (a href = "http://www.reddit.com")derp(/a) links to Reddit and displays “derp”<br>
+      </p>
+    </div>
+    <div class="block">
+      <p>
+        <b>Complete HTML document format</b>
+      </p>
+      <p>
+  (!DOCTYPE HTML)<br>
+  (html)<br>
+  (head)<br>
+    (title)Title text(/title)<br>
+  	(/head)<br>
+  (body)<br>
+    (b)content(/b)<br>
+  (/body)<br>
+  (/html)<br>
+      </p>
+    </div>
+ 
+    <h2 id="lesson1_2">Lesson 1.2</h2>
+    <div class="block">
+      <p>
+        Basic word in HTML is a tag; browser forms tags into "tree" with DOM. CSS must be used to define style (HTML is frame of house, CSS is decoration/interior). HTML has to provide the browser information on what style system to use and where to find it. When coding different HTML elements on a page, give each different "box" its own div class so that you can keep them separate and easily apply CSS to different ones.
+      </p>
+    </div>
+    
+    <h2 id="lesson1_3">Lesson 1.3</h2>
+    <div class="block">
+      <p>
+        <b>Cascading style sheets (CSS)</b>
+      </p>
+      <p>
+        Different levels of rules (national-state-municipal law metaphor). Most specific rule for a certain element gets applied. Inheritance allows certain CSS property values to be applied to “descendant” elements, so that properties do not have to be written over and over again.<br>
+        To make a CSS rule, start with a selector (ex <b>p {</b> to select all paragraphs, <b>.description {</b> to select elements with class description)
+      </p>
+    </div>
+    <div class="block">
+      <p>
+        <b>Reverse-engineering webpages</b>
+      </p>
+      <p>        
+        Process for reverse-engineering towards a goal: code, test, refine, starting from general layout towards smaller details. You can use Developer Tools (inspect element in Firefox) to edit webpages, tweak them to better understand how they’re built.
+      </p>
+    </div>
+    <h2 id="additional_notes">Other important notes</h2>
+    <div class="block">
+      <p>
+        <b>Importance of structure</b>
+      </p>
+      <p>
+        Structure is vital for computer code. First, a good structure keeps things organized, so that you can quickly and easily go through your code. This makes it easier to know which parts do what, and simplifies things like assigning CSS rules to groups and debugging. Second, because computers are "stupid" and interpret code literally with set rules, a good structure will make computers more likely to understand your code. Unstructured code may have small errors or discrepancies which will make computers unable to read your code properly.
+      </p>
+    </div>
+    <div class="block">
+      <p>
+        <b>Importance of avoiding repetition</b>
+      </p>
+      <p>
+        To write an effective program, it is also important to avoid repetition. Repetition is not only inefficient and time-consuming, it can create redundancies and errors. A computer may get confused by multiple items of overlapping code in a program, impeding the code's functionality.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+    
+    
+    
+    
+    
+  </body>
+</html>
